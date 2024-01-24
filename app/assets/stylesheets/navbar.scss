@@ -1,0 +1,31 @@
+.navbar {
+    .searchbar {
+        background-color: rgba(178,178,171, 0.3);
+        padding: 0.25rem;
+        flex-grow: 1;
+        & > input[type='text'] {
+            padding: 0.25rem 0.5rem;
+        }
+
+        //& > select {
+        //    width: 12rem;
+        //    padding: 0.5rem 1rem;
+        //}
+
+        & > button[type='Submit'] {
+            padding: 0.5rem 1rem;
+        }
+
+        & > * {          
+            max-height: 2.5rem;  
+            border-radius: 0;
+            margin: 0.25rem;
+            box-shadow: none;
+            border: none;
+        }
+    }
+
+    .navbar-brand {
+        margin-right: 5rem;
+    }
+}

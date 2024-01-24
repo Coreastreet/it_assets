@@ -1,0 +1,19 @@
+.vertical-nav {
+    width: 8rem;
+    .nav-link {
+        border-left: 2px solid lightgray;
+        color: black;
+
+        &:hover {
+            background-color: lightgray;
+        }
+    }
+
+    .nav-link.active {
+        border-left: 2px solid royalblue;
+    };
+}
+
+.list-devices {
+    flex-grow: 1;
+}

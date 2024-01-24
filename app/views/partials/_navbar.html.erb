@@ -1,0 +1,25 @@
+<nav class="navbar navbar-expand-lg navbar-light sticky-top bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="/">
+        <figure class="mb-0">
+          <%= image_tag("mcr_logo.png", width: 200) %>
+        </figure>
+      </a> 
+      <%= form_with url: "/search",  method: :post, class: "d-flex rounded-0 searchbar" do |form| %>
+            <%= form.text_field :query, placeholder: "Species name", class: "flex-grow-1" %>
+            <%= form.submit "Search", class: "btn-search btn btn-primary" %>
+      <% end %>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse flex-column align-items-end" id="navbarTogglerDemo02">
+        <form class="pt-0">
+          <% if logged_in_as_admin? %>
+            <%= link_to("Sign Out", logout_path, class: "btn btn-outline-secondary mr-2")%>
+          <% else %>
+            <%= link_to("Admin Login", login_path, class: "btn btn-outline-primary mr-2") %>
+          <% end %>
+        </form>
+      </div>
+    </div>
+</nav>

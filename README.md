@@ -1,24 +1,14 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This repo hosts the code for a demo project to demonstrate my skills in 
 
-Things you may want to cover:
+Ruby on Rails, postgresql, Jquery and bootstrap. I would add minitest, jenkins and AWS but this was created in a short amount of time.
 
-* Ruby version
+Currently, Heroku (the hosting website for this code's app) does not support cookies at the subdomain level, so logging in and out will not work; though it will on a normal hosted website.
 
-* System dependencies
+See below for a demonstration of the login and logout user "happy" path, in the mobile screen format.
 
-* Configuration
+![gif_web_demo](https://github.com/Coreastreet/it_assets/assets/38857013/e5ebb359-a645-450d-ba01-966c0db6371d)
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Regards,
+Justin

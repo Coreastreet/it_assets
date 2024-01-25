@@ -4,20 +4,26 @@
         <figure class="mb-0">
           <%= image_tag("mcr_logo.png", width: 200) %>
         </figure>
+        <%= link_to(login_path, class: "icon_sign_in btn btn-outline-primary mr-2") do %>
+              <i class="fa fa-user"></i>
+        <% end %>
       </a> 
       <%= form_with url: "/search",  method: :post, class: "d-flex rounded-0 searchbar" do |form| %>
             <%= form.text_field :query, placeholder: "Species name", class: "flex-grow-1" %>
-            <%= form.submit "Search", class: "btn-search btn btn-primary" %>
+            <%= button_tag type: "submit", class: "btn-search btn btn-primary" do %>
+                <i class="fa fa-search"></i>
+            <% end %>
       <% end %>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
       <div class="collapse navbar-collapse flex-column align-items-end" id="navbarTogglerDemo02">
         <form class="pt-0">
           <% if logged_in_as_admin? %>
             <%= link_to("Sign Out", logout_path, class: "btn btn-outline-secondary mr-2")%>
+            
           <% else %>
-            <%= link_to("Admin Login", login_path, class: "btn btn-outline-primary mr-2") %>
+            <%= link_to(login_path, class: "btn btn-outline-primary mr-2") do %>
+              <i class="fa fa-user"></i>
+              Admin Login
+            <% end %>
           <% end %>
         </form>
       </div>

@@ -24,8 +24,36 @@
             border: none;
         }
     }
+}
 
-    .navbar-brand {
-        margin-right: 5rem;
+
+@media only screen and (max-width: 768px) {
+    .navbar {
+        .navbar-brand {
+            margin-right: 0rem !important;
+        }
+        .icon_sign_in {
+            display: block !important;
+        }
+    }
+
+    .second-sticky {
+        top: 9.5rem !important;
+    }
+}
+
+@media only screen and (max-width: 1600px) {
+    .navbar {
+        .navbar-brand {
+            margin-right: 5rem  ;
+        }
+
+        .icon_sign_in {
+            display: none;
+        }
+    }
+
+    .second-sticky {
+        top: 5.5rem;
     }
 }

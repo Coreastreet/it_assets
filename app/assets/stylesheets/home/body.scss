@@ -1,5 +1,4 @@
 .vertical-nav {
-    width: 8rem;
     .nav-link {
         border-left: 2px solid lightgray;
         color: black;
@@ -16,4 +15,24 @@
 
 .list-devices {
     flex-grow: 1;
+}
+
+@media only screen and (max-width: 768px) {
+    .vertical-nav {
+        width: 100% !important;
+        & > .nav {
+            flex-wrap: nowrap;
+            overflow-x: hidden;
+            .nav-link {
+                width: max-content;
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 1200px) {
+    .vertical-nav {
+        width: 8rem;
+    }
 }

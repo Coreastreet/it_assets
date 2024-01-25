@@ -12,8 +12,8 @@ html, body {
         display: flex;
         align-items: center;
         justify-content: center;
-        background-image: url('../images/rail_safety_hero.jpg');
-        background-size: cover;
+        background-image: url('../images/plant_background.jpg');
+        background-size: contain;
         
         &::before {
           content: "";
@@ -38,7 +38,7 @@ html, body {
     top: 5rem;
     z-index: 2000;
     position: sticky;
-    background-color: rgba(0, 0, 0, 0.55); 
+    background-color: rgba(0, 0, 0, 0.85); 
 
     .nav-tabs {
         .nav-link {
